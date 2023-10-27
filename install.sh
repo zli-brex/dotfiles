@@ -9,5 +9,6 @@ sudo chsh $USER -s $(which zsh)
 echo "Installing zhjngli env..."
 git clone https://github.com/zhjngli/env.git
 popd env
+git apply ../env.patch
 ./env.sh --install git vimrc zsh-theme zshrc
 pushd
